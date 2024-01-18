@@ -1,0 +1,270 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+  font-family: "Merienda", cursive;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 20px;
+  padding-bottom: 0;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: #5a5050;
+  color: #e8dfd9;
+  font-family: "Merienda", cursive;
+  z-index: 100000;
+  position: absolute;
+  width: 100vw;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100%;
+  top: -200px;
+  overflow: hidden;
+  font-family: "Merienda", cursive;
+}
+
+.app .play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 550px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  z-index: 100;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background-image: url("../img/play-button-arrowhead.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.app .play:hover {
+  opacity: 1;
+}
+
+.app .pause {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 550px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  z-index: 100;
+  opacity: 0.2;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  background-image: url("../img/pause.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.app .pause:hover {
+  opacity: 1;
+}
+
+.arrow-left,
+.arrow-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 240px;
+  width: 144px;
+  height: 780px;
+  padding-top: 340px;
+  padding-bottom: 320px;
+  opacity: 0.5;
+  z-index: 10;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.appvideo {
+  width: 100vw;
+  height: 200vh;
+  bottom: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  opacity: 0.9;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+
+video {
+  margin: 0;
+  padding: 0;
+  min-height: 1300px;
+}
+
+.control {
+  font-family: "Merienda", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  width: 100vw;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border: none;
+  cursor: pointer;
+  color: #e8dfd9;
+  background-color: #000000;
+}
+
+.controlActive {
+  bottom: 170px;
+  color: #e8dfd9;
+  background: #121110;
+  font-family: "Merienda", cursive;
+}
+
+.meditation-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #d5c7bc;
+  background-color: #e8dfd9;
+  background: #121110;
+  width: 100vw;
+  max-height: 170px;
+  bottom: 0;
+  z-index: 100;
+  bottom: -2000px;
+}
+
+.meditation-time button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 50pc;
+  font-family: "Merienda", cursive;
+  font-size: 30px;
+  background-color: #1b1a19;
+  color: white;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  -webkit-box-shadow: 4px 5px 7px #5d5b5b;
+          box-shadow: 4px 5px 7px #5d5b5b;
+  cursor: pointer;
+}
+
+.meditation-time button:hover {
+  opacity: 1;
+}
+
+.meditation-time .activeTimer {
+  opacity: 1;
+  background: #262525;
+}
+
+.btnActive {
+  bottom: 0px;
+}
+/*# sourceMappingURL=style.css.map */

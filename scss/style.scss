@@ -1,0 +1,213 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #000;
+	overflow: hidden;
+	font-family: "Merienda", cursive;
+}
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 20px;
+	padding: 20px;
+	padding-bottom: 0;
+	letter-spacing: 5px;
+	font-size: 40px;
+	color: rgb(90, 80, 80);
+	color: #e8dfd9;
+	font-family: "Merienda", cursive;
+	z-index: 100000;
+
+	position: absolute;
+
+	width: 100vw;
+}
+
+.app {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100%;
+	top: -200px;
+	overflow: hidden;
+	font-family: "Merienda", cursive;
+
+	.play {
+		display: flex;
+		position: absolute;
+		top: 550px;
+		justify-content: center;
+		width: 200px;
+		height: 200px;
+		background-color: #ffffff;
+		border: none;
+		border-radius: 50%;
+		z-index: 100;
+		opacity: 0.6;
+		transition: opacity 0.3s;
+		background-image: url("../img/play-button-arrowhead.png");
+		background-size: 40%;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+		filter: invert(1);
+	}
+	.play:hover {
+		opacity: 1;
+	}
+	.pause {
+		display: flex;
+		position: absolute;
+		top: 550px;
+		justify-content: center;
+		width: 200px;
+		height: 200px;
+		background-color: #fff;
+		border: none;
+		border-radius: 50%;
+		z-index: 100;
+		opacity: 0.2;
+		transition: opacity 0.3s;
+		background-image: url("../img/pause.png");
+		background-size: 40%;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+	.pause:hover {
+		opacity: 1;
+	}
+}
+.arrow-left,
+.arrow-right {
+	display: flex;
+	position: absolute;
+	top: 240px;
+	width: 144px;
+	height: 780px;
+	padding-top: 340px;
+	padding-bottom: 320px;
+
+	opacity: 0.5;
+	z-index: 10;
+	transition: opacity 0.3s;
+	cursor: pointer;
+}
+.arrow-left:hover,
+.arrow-right:hover {
+	opacity: 1;
+}
+.arrow-left {
+	left: 0;
+}
+.arrow-right {
+	right: 0;
+}
+.appvideo {
+	width: 100vw;
+	height: 200vh;
+	bottom: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+video {
+	display: flex;
+	position: absolute;
+	top: 0;
+	opacity: 0.9;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	position: absolute;
+}
+video {
+	margin: 0;
+	padding: 0;
+	min-height: 1300px;
+}
+.control {
+	font-family: "Merienda", cursive;
+
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	width: 100vw;
+	height: 100px;
+	justify-content: center;
+	justify-self: center;
+	justify-items: center;
+	align-self: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	border: none;
+	cursor: pointer;
+	color: #e8dfd9;
+	background-color: #000000;
+}
+.controlActive {
+	bottom: 170px;
+	color: #e8dfd9;
+	background: #121110;
+	font-family: "Merienda", cursive;
+}
+
+.meditation-time {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	background: #d5c7bc;
+	background-color: #e8dfd9;
+	background: #121110;
+	width: 100vw;
+	max-height: 170px;
+	bottom: 0;
+	z-index: 100;
+
+	bottom: -2000px;
+	// filter:brightness(0.4);
+
+	button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 150px;
+		height: 150px;
+		margin: 30px;
+		padding: 5px;
+		border: none;
+		border-radius: 50pc;
+		font-family: "Merienda", cursive;
+
+		font-size: 30px;
+		background-color: #1b1a19;
+		color: rgb(255, 255, 255);
+		opacity: 0.5;
+		transition: opacity 0.3s;
+		box-shadow: 4px 5px 7px rgb(93, 91, 91);
+		cursor: pointer;
+	}
+	button:hover {
+		opacity: 1;
+	}
+	.activeTimer {
+		opacity: 1;
+		background: rgb(38, 37, 37);
+	}
+}
+
+.btnActive {
+	bottom: 0px;
+}
